@@ -1,0 +1,83 @@
+---
+---
+
+<div class="subscribe">
+	<h3>Stay in the loop</h3>
+	<p>Get new posts delivered to your inbox. No spam, unsubscribe anytime.</p>
+	<form
+		action="https://buttondown.com/api/emails/embed-subscribe/strrl"
+		method="post"
+		target="popupwindow"
+		onsubmit="window.open('https://buttondown.com/strrl', 'popupwindow')"
+		class="embeddable-buttondown-form"
+	>
+		<div class="form-row">
+			<input
+				type="email"
+				name="email"
+				id="bd-email"
+				placeholder="your@email.com"
+				required
+			/>
+			<button type="submit">Subscribe</button>
+		</div>
+		<p class="powered-by">
+			Powered by <a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a>
+		</p>
+	</form>
+</div>
+
+<style>
+	.subscribe {
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 8px;
+		padding: 1.5em;
+		margin: 2em 0;
+		background: rgba(var(--gray-light), 0.2);
+	}
+	.subscribe h3 {
+		margin-top: 0;
+		font-size: 1.25em;
+	}
+	.subscribe p {
+		margin-bottom: 1em;
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+	.form-row {
+		display: flex;
+		gap: 0.5em;
+	}
+	input[type="email"] {
+		flex: 1;
+		padding: 0.5em 0.75em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 4px;
+		font-size: 1em;
+		background: white;
+	}
+	button[type="submit"] {
+		padding: 0.5em 1.25em;
+		background: var(--accent);
+		color: white;
+		border: none;
+		border-radius: 4px;
+		font-size: 1em;
+		cursor: pointer;
+		white-space: nowrap;
+	}
+	button[type="submit"]:hover {
+		background: var(--accent-dark);
+	}
+	.powered-by {
+		font-size: 0.75em;
+		color: rgb(var(--gray));
+		margin-top: 0.5em;
+		margin-bottom: 0;
+	}
+	@media (max-width: 480px) {
+		.form-row {
+			flex-direction: column;
+		}
+	}
+</style>
